@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" href="../CSS/">
+    <title>customer login</title>
+    <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+    
+        body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+    
+        }
+    
+        .swiper {
+          width: 90%;
+          height: 90%;
+        }
+    
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+    
+        }
+    
+        .img4 {
+          
+          background-image: url("https://pk.khaadi.com/media/wysiwyg/khaadi/01-01-2ndscroll/2nd_Scroll-0530.png");
+          background-size: cover;
+        }
+    
+        .img4:hover {
+          background-image: url(https://pk.khaadi.com/media/wysiwyg/khaadi/01-01-2ndscroll/2nd-scroll-0530.jpg);
+        }
+    
+        .img5 {
+          background-image: url(../index.html/khadi4.png);
+        }
+        .saim{
+          background-color: orangered;
+          
+        }
+        .aim{
+          margin-left: 10px;
+          margin-bottom: 20px;
+        }
+        .im{
+          margin-bottom: 20px;
+        }
+        .mi{
+          margin-bottom: 20px;
+        }
+        .si{
+          margin-bottom: 20px;
+        }
+        .h{
+          color: black;
+        }
+        .popup-box {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      z-index: 1;
+    }
+    
+    .sale-container:hover .popup-box {
+      display: block;
+    }
+    .popup-box {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      z-index: 1;
+    }
+    
+    .eid-container:hover .popup-box {
+      display: block;
+    }
+    
+    .popup-box {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      z-index: 1;
+    }
+    
+    .collect-container:hover .popup-box {
+      display: block;
+    }
+    
+    .popup-box {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      z-index: 1;
+    }
+    
+    .fab-container:hover .popup-box {
+      display: block;
+    }
+    
+    .popup-box {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      z-index: 1;
+    }
+    
+    .read-container:hover .popup-box {
+      display: block;
+    }
+    
+    .popup-box {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      z-index: 1;
+    }
+    
+    .west-container:hover .popup-box {
+      display: block;
+    }
+    .search-container {
+          position: relative;
+          display: inline-block;
+        }
+    
+        .search-bar {
+          display: none;
+          position: absolute;
+          top: 30px;
+          left: 0;
+          width: 200px;
+          padding: 5px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          background-color: #fff;
+        }
+    
+        .search-container:hover .search-bar {
+          display: block;
+        }
+    
+        /* Additional styles for icon */
+        .search-icon {
+          cursor: pointer;
+        }
+       .box1{
+        position: relative;
+        background-color: plum;
+        border-radius: 10px;
+        display: flex;
+        width: 70%;
+        height: 300px;
+        margin-left: 190px;
+       }
+       .log{
+        margin-left: 250px;
+        margin-top: 30px;
+        padding: 10px;
+        
+       }
+       .olg{
+        padding: 10px;
+        background-color: purple;
+        border-radius: 1px;
+       }
+        
+        
+        
+      </style>
+</head>
+<body>
+    <div class="container-fluid d-flex justify-content-center saim">
+        <div class="row">
+          <marquee behavior="" direction="right"><div class="col-12">
+            <p >Don't miss the Khaadi SALE! Get up to 70% OFF on your favorite items before stock runs out. SHOP NOW!</p>
+          </div></marquee>
+          
+        </div>
+      </div>
+    
+    
+      <div class="row" style="background-color: white; border: 1px solid black;">
+        <div class="col-2" style="margin-top: 20px;">
+          <img  src="https://pk.khaadi.com/media/porto/sticky_logo/stores/24/logo-khaadi.png"  style="height: 50px; width: 100px; margin-bottom: 5px;"/>
+        </div>
+        <div class="col-7" style="display:flex; margin-top: 30px;">
+          <div class="col-1 sale-container" >
+            <strong>Sale</strong>
+            <div class="popup-box">
+              <img src="Screenshot (183).jpg" alt="">
+            </div>
+          </div>
+          <div class="col-3 eid-container">
+            <strong>Eid Collection</strong>
+            <div class="popup-box">
+              <img src="Screenshot (184).jpg" alt="">
+            </div>
+          </div>
+          <div class="col-2 collect-container">
+            <p style="color: #6e6767;">New In</p>
+            <div class="popup-box">
+              <img src="Screenshot (185).jpg" alt="">
+            </div>
+        </div>
+          <div class="col-2 fab-container">
+            <p style="color: #6e6767;">Fabrics</p>
+            <div class="popup-box">
+              <img src="Screenshot (186).jpg" alt="">
+            </div>
+    
+          </div>
+          <div class="col-2 read-container">
+            <p style="color: #6e6767;">Ready to Wear</p>
+            <div class="popup-box">
+              <img src="Screenshot (187).jpg" alt="">
+            </div>
+           
+    
+          </div>
+          <div class="col-2 west-container">
+            <p style="color: #6e6767;">Western</p>
+            <div class="popup-box">
+              <img src="Screenshot (188).jpg" alt="">
+            </div>
+    
+          </div>
+         
+          <div class="col-1 d-flex align-items-center justify-content-end im ">
+            <a class="h" href="https://pk.khaadi.com/track-your-order/">
+            <i class="bi bi-cart-check fs-7 "> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="25"height="25" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+              <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+              <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+              
+            </svg> <br>
+            Track
+          </i></a>
+          </div>
+          <div class="col-1 d-flex align-items-center  justify-content-end mi ">
+            <div class="search-container">
+            <i class="bi bi-search  ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg> <br>
+            Search
+          </i>
+          <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+          </div>
+        </div>
+          </div>
+          <div class="col-1 d-flex align-items-center justify-content-end si ">
+            <i class="bi bi-person">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+              <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+            </svg> <br>
+            Account
+          </i>
+          </div>
+          <div class="col d-flex align-items-center aim  ">
+            <i class="bi bi-bag">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+            </svg> <br>
+            Bag
+          </i>
+          </div>
+    
+        </div>
+
+        <h3 style="font-size: large; font-family: Georgia, 'Times New Roman', Times, serif; margin-left: 170px;">Customer Login</h3>
+        <div class="box1">
+        <h6 style="font-family: Arial, Helvetica, sans-serif;margin-top: 30px; ">Registered Customers</h6>
+        <p style="margin-top: 60px;position: absolute;">If you have an account, sign in with your email address.</p>
+        <form>
+            <label for="email" style="margin-top: 150px;margin-left: 30px;">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+          <div class="log">
+            <input class="olg" type="submit" value="Login">
+        </div>
+          </form>
+        </div>
+
+
+    <script src="khaadi.js"></script>
+</body>
+</html>

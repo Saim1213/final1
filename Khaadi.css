@@ -1,0 +1,287 @@
+.pre{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: orangered;
+    width: 100%;
+    height: 25px;
+}
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: smaller;
+    color: black;
+    margin-left: 25%;
+}
+
+@media screen and (max-width: 480px) {
+    p {
+        text-align: center; /* Center align the text */
+        margin-left: 0;
+    }
+}
+.s{
+    width: 100%;
+    margin-top: 10px;
+}
+.a{
+    margin-left: 10px;
+}
+.d{
+    text-align: center;
+    
+    
+}
+.row-s{
+    background-color: orangered;
+    
+}
+.w{
+    margin-top: 10px;
+}
+.k{
+    margin-top: 10px;
+    
+}
+.saim{
+    background-color: orangered;
+    
+  }
+  .l{
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(Screenshot\ \(177\).jpg);
+  }
+  .m{
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(Screenshot\ \(178\).jpg);
+  }
+  .n{
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(Screenshot\ \(179\).jpg);
+  }
+  .b{
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(Screenshot\ \(180\).jpg);}
+  .v{
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(Screenshot\ \(181\).jpg);
+  }
+  .u{
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(Screenshot\ \(182\).jpg);
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .img4{
+      width: 50%;
+      height: 270px;
+      
+    }
+    .img1{
+      width: 50%;
+      height: 270px;
+    }
+    .img2{
+      width: 50%;
+      margin-top: 10px;
+    }
+   .togo{
+    width: 100%;
+   margin-left: 70px;
+   }
+   .goto{
+    width: 100%;
+   }
+   .ready{
+    width: 100%;
+   }
+   .muse{
+    width: 100%;
+    margin-left: 70px;
+   }
+   .tern{
+    width: 100%;
+    margin-left: 70px;
+    margin-top: 20px;
+   }
+   .est{
+    width: 100%;
+   }
+   .ear{
+    width: 100%;
+    
+   }
+   .shot{
+    width: 100%;
+    margin-left: 70px;
+   }
+   .mi{
+      margin-left: 20px;
+   }
+   .si{
+    margin-left: 20px;
+   }
+  }
+
+
+  @media only screen and (min-width: 425px) and (max-width: 767px) {
+    /* Styles for small devices */
+    .img4{
+      width: 90%;
+      height: 270px;
+      margin-left: 20px;
+      
+    }
+    .img1{
+      width: 100%;
+      height: 270px;
+      margin-top: 10px;
+      margin-left: 40px;
+    }
+    .img2{
+      width: 100%;
+      margin-top: 40px;
+      margin-left:40px ;
+    }
+    .img3{
+      margin-top: 10px;
+      margin-left: 40px;
+    }
+   .togo{
+    display: flex;
+    width: 50%;
+    display: none;
+   }
+   
+   .goto{
+    width: 100%;
+   }
+   .ready{
+    width: 100%;
+   }
+   .muse{
+    width: 100%;
+    margin-left: 70px;
+    display: none;
+   }
+   .tern{
+    width: 100%;
+    margin-left: 70px;
+    margin-top: 20px;
+    display: none;
+   }
+   .est{
+    width: 100%;
+   }
+   .ear{
+    width: 100%;
+    
+   }
+   .shot{
+    width: 100%;
+    margin-left: 70px;
+    display: none;
+   }
+   .mi{
+      margin-left: 20px;
+   }
+   .si{
+    margin-left: 20px;
+   }
+  .loop{
+    margin-top: 160px;
+  }
+  .esg{
+    margin-left: 50px;
+  }
+  .sg{
+    margin-left: 20px;
+  }
+  .gi{
+    display: none;
+  }
+  .dim{
+    display: none;
+  }
+  .mids{
+    margin-left: 110px;
+    
+  }
+  .mik h4{
+font-size: small;
+/* margin-right: 50px; */
+  }
+  .mik p{
+    display: none;
+  }
+  .jim h4{
+    /* margin-right: 100px; */
+    font-size: small;
+    
+  }
+  .jim p{
+    display: none;
+  }
+ .mias{
+  width: 40px;
+ }
+ .ais{
+  width: 40px;
+ 
+ }
+ .wer h4{
+font-size: small;
+ }
+ .wer p{
+  display: none;
+ }
+ .sc{
+  margin-right: 10px;
+ }
+ .j{
+  font-size: 11px;
+  margin-left: 10px;
+  margin-top: 3px;
+ }
+ .Eid{
+  font-size: 11px;
+  margin-left: 25px;
+  margin-top: 3px;
+ }
+ .west-container{
+  display: none;
+ }
+ .im{
+  font-size: 10px;
+  margin-left: 30px;
+ }
+ .mi{
+  font-size: 10px;
+  margin-left: 20px;
+ }
+ .si{
+  font-size: 10px;
+  margin-left: 20px;
+ }
+ .aim{
+  font-size: 10px;
+  margin-left: 40px;
+ }
+  }
+  
